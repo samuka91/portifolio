@@ -22,8 +22,8 @@ import {
   Zap,
   Lock,
   Workflow,
-  RefreshCw, // Novo ícone para Patch/Ciclo de Vida
-  Key        // Novo ícone para Identidade/Acesso
+  RefreshCw,
+  Key
 } from 'lucide-react';
 
 // ==========================================
@@ -38,8 +38,8 @@ const portfolioData = {
         bio: "Transformo operações manuais em ecossistemas autônomos. Especialista em orquestração Microsoft, segurança de identidade e engenharia de confiabilidade (SRE) aplicada à infraestrutura.",
         email: "samuel.lima_@hotmail.com",
         linkedin: "https://www.linkedin.com/in/samuel-lima-tech",
-        // O Vite serve a pasta 'public' na raiz '/'
-        avatar: "/profile.jpg" 
+        // Mantenho o link do LinkedIn, mas recomendo alterar para "/profile.jpg" se já tiver salvo o arquivo localmente
+        avatar: "https://media.licdn.com/dms/image/v2/D4D03AQGHh0Dkr9FnpQ/profile-displayphoto-scale_200_200/B4DZsYN7ivGwAY-/0/1765637864068?e=1769644800&v=beta&t=NXVxx33g2pQFhIh-2kpci5a0C6UStildzQCHhUVDYN0" 
     },
     techStack: [
         { name: "Python & Automation", icon: Code2, level: 90 },
@@ -50,7 +50,7 @@ const portfolioData = {
         { name: "AI Integration (LLMs)", icon: Cpu, level: 80 },
     ],
     // ==========================================
-    // PROJETOS DESTAQUE (4 Projetos Agora)
+    // PROJETOS DESTAQUE (4 Projetos)
     // ==========================================
     projects: [
         {
@@ -313,7 +313,7 @@ export default function App() {
                                     <img 
                                         src={portfolioData.hero.avatar} 
                                         alt="Samuel Lima" 
-                                        className="w-full aspect-square object-cover rounded-xl grayscale hover:grayscale-0 transition-all duration-500"
+                                        className="w-full aspect-square object-cover object-top rounded-xl grayscale hover:grayscale-0 transition-all duration-500"
                                     />
                                     <div className="mt-3 px-2 pb-1 flex justify-between items-center font-mono text-[10px] md:text-xs text-slate-500">
                                         <span>IMG_2025.RAW</span>
@@ -395,7 +395,7 @@ export default function App() {
                     </div>
                 </section>
 
-                {/* FEATURED PROJECTS (ATUALIZADO) */}
+                {/* FEATURED PROJECTS (4 PROJETOS ATUALIZADOS) */}
                 <section className="mb-20 md:mb-32">
                     <SectionHeader 
                         title="Featured Projects" 
